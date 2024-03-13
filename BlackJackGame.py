@@ -1,5 +1,5 @@
 import random
-from replit import clear
+import os
 from art import logo
 
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
@@ -33,7 +33,7 @@ def check_winner():
 
 while Game_on:
     continue_game = input("Do you want to play Blackjack? Type 'y' or 'n': ")
-    clear()
+    os.system('cls')
     if continue_game == "y":
         print(logo)
         looping()
